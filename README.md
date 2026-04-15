@@ -134,15 +134,6 @@ setInterval(nextSlide, 5000); // Auto-rotate every 5s
 - **Optimized CSS/JS** (~20KB total)
 - **Images:** Ready for WebP conversion
 
-##  What's Next?
-
-- [ ] Form backend (EmailJS)
-- [ ] PWA (offline support)  
-- [ ] Image lazy loading
-- [ ] Booking system
-- [ ] Multi-language
-
----
 
 
 

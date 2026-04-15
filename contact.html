@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rwanda Eco-Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>Rwanda Eco-Tours</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="tours.html" class="nav-link">Tours</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Ready for your Rwanda adventure? Let's plan your perfect trip!</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Visit Us</h2>
+                    <p>We're here to help you plan the perfect Rwanda adventure.</p>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Main Office</h4>
+                            <p>KN 3 Ave, Kigali, Rwanda</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+250 788 123 456</p>
+                            <p>+250 252 555 789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@rwandaecotours.com</p>
+                            <p>bookings@rwandaecotours.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 8AM - 6PM</p>
+                            <p>Sat: 9AM - 4PM</p>
+                            <p>Sun: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <h2>Send Message</h2>
+                        <p>Tell us about your dream Rwanda trip!</p>
+                        
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <span class="error-message" id="firstNameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <span class="error-message" id="lastNameError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Phone (Optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Trip Type *</label>
+                                    <select id="tripType" name="tripType" required>
+                                        <option value="">Select trip type</option>
+                                        <option value="gorilla">Gorilla Trekking</option>
+                                        <option value="lake">Lake Kivu</option>
+                                        <option value="cultural">Cultural Tour</option>
+                                        <option value="volcano">Volcanoes</option>
+                                        <option value="custom">Custom Trip</option>
+                                    </select>
+                                    <span class="error-message" id="tripTypeError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Travel Date *</label>
+                                    <input type="date" id="travelDate" name="travelDate" required>
+                                    <span class="error-message" id="travelDateError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Number of Travelers *</label>
+                                <select id="travelers" name="travelers" required>
+                                    <option value="">Select number</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3-5">3-5 People</option>
+                                    <option value="6+">6+ People</option>
+                                </select>
+                                <span class="error-message" id="travelersError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream trip..." required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Embed (Optional) -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.962038140856!2d30.127506614768!3d-1.949162935595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU2JzU3LjMiUyAzMMKwMDdnJzM1LjMiRQ!5e0!3m2!1sen!2srw!4v1690000000000" 
+                width="100%" 
+                height="400" 
+                style="border:0; border-radius: var(--border-radius);" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rwanda Eco-Tours</h3>
+                    <p>Discover Rwanda's natural beauty with sustainable tourism experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+                    <p><i class="fas fa-phone"></i> +250 788 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@rwandaecotours.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rwanda Eco-Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Enhanced Contact Form Validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const inputs = form.querySelectorAll('[required]');
+            
+            // Real-time validation
+            inputs.forEach(input => {
+                input.addEventListener('blur', validateField);
+                input.addEventListener('input', validateField);
+            });
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateForm()) {
+                    showModal('Thank you for your message! Our team will contact you within 24 hours to plan your Rwanda adventure.');
+                    form.reset();
+                }
+            });
+        });
+
+        function validateField(e) {
+            const field = e.target;
+            const wrapper = field.closest('.form-group');
+            const errorEl = wrapper.querySelector('.error-message');
+            
+            // Clear previous errors
+            if (errorEl) errorEl.remove();
+            field.classList.remove('error', 'success');
+            
+            let isValid = true;
+            let errorMsg = '';
+            
+            if (field.type === 'email' && field.value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(field.value)) {
+                    isValid = false;
+                    errorMsg = 'Please enter a valid email address';
+                }
+            } else if (field.type === 'tel' && field.value) {
+                const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+                if (!phoneRegex.test(field.value.replace(/\s/g, ''))) {
+                    isValid = false;
+                    errorMsg = 'Please enter a valid phone number';
+                }
+            } else if (field.required && !field.value.trim()) {
+                isValid = false;
+                errorMsg = field.previousElementSibling.textContent + ' is required';
+            }
+            
+            if (!isValid) {
+                field.classList.add('error');
+                if (errorMsg) {
+                    const errorEl = document.createElement('span');
+                    errorEl.className = 'error-message';
+                    errorEl.textContent = errorMsg;
+                    wrapper.appendChild(errorEl);
+                }
+            } else {
+                field.classList.add('success');
+            }
+        }
+
+        function validateForm() {
+            let isValid = true;
+            document.querySelectorAll('[required]').forEach(field => {
+                validateField({ target: field });
+                if (field.classList.contains('error')) isValid = false;
+            });
+            return isValid;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda Eco-Tours - Discover Rwanda's Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>Rwanda Eco-Tours</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="tours.html" class="nav-link">Tours</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Rwanda's Untamed Beauty</h1>
+            <p>Experience gorilla trekking, volcanic landscapes, and cultural heritage with Rwanda's premier eco-tour operator</p>
+            <div class="hero-buttons">
+                <a href="tours.html" class="btn btn-primary">Book a Tour</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-slider">
+            <div class="slider-container" id="heroSlider">
+                <img src="download.jpg" alt="Gorilla Trekking" class="slide active">
+                <img src="download (1).jpg" alt="Lake Kivu" class="slide">
+                <img src="download (11).jpg" alt="Volcanoes" class="slide">
+            </div>
+            <div class="slider-nav">
+                <button class="slider-btn prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tours -->
+    <section class="featured-tours">
+        <div class="container">
+            <h2>Featured Tours</h2>
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <img src="download.jpg" alt="Gorilla Trekking">
+                    <div class="tour-info">
+                        <h3>Gorilla Trekking</h3>
+                        <p>3 Days / 2 Nights</p>
+                        <div class="price">$1,250</div>
+                        <a href="tours.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <img src="download (2).jpg" alt="Lake Kivu">
+                    <div class="tour-info">
+                        <h3>Lake Kivu Escape</h3>
+                        <p>4 Days / 3 Nights</p>
+                        <div class="price">$850</div>
+                        <a href="tours.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <img src="download (3).jpg" alt="Cultural Tour">
+                    <div class="tour-info">
+                        <h3>Cultural Heritage</h3>
+                        <p>5 Days / 4 Nights</p>
+                        <div class="price">$950</div>
+                        <a href="tours.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">Happy Travelers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Tours Completed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Satisfaction</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Expert Guides</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rwanda Eco-Tours</h3>
+                    <p>Discover Rwanda's natural beauty with sustainable tourism experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+                    <p><i class="fas fa-phone"></i> +250 788 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@rwandaecotours.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rwanda Eco-Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
